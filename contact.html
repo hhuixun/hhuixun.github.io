@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>title</title>
+    <title>Huixun's Portfolio</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -58,20 +58,19 @@
         <!-- nav -->
         <nav>
             <ul class="box-primary-nav">
-                <li class="box-label">All  about me</li>
+                <li class="box-label">All</li>
 				<li><a href="about.html">About me</a></li>
-                <li><a href="services.html">services</a></li>
-                <li><a href="portfolio.html">portfolio</a></li>
-                <li><a href="contact.html">contact me</a> <i class="ion-ios-circle-filled color"></i></li>
-
-
-
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact me</a> <i class="ion-ios-circle-filled color"></i></li>
+<!--
                 <li class="box-label">Follow me</li>
 
                 <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
                 <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
                 <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
                 <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
+-->
             </ul>
         </nav>
         <!-- end nav -->
@@ -81,7 +80,7 @@
     <!-- top bar -->
     <div class="top-bar">
         <h1>contact Me</h1>
-        <p><a href="#">Home</a> / Contact Me</p>
+        <p><a href="index.html">Home</a> / Contact Me</p>
     </div>
     <!-- end top bar -->
 
@@ -141,7 +140,7 @@
     <!-- footer -->
     <footer>
         <div class="container-fluid">
-            <p class="copyright">© Box Portfolio 2016</p>
+            <p class="copyright">© Huixun's Portfolio 2019</p>
         </div>
     </footer>
     <!-- end footer -->
@@ -170,13 +169,13 @@
 				var email = $("[name=email]").val();
 				var object = $("[name=object]").val();
 				var message = $("[name=message]").val();
-				var body= "My Name is: "+name+"" ; 
-				body += "My Email Address is: "+email+"" ;
-				body += "object: "+object+"" ;
+				var body= "Name: "+name+"%0a%0d" ; 
+				body += "Email: "+email+"%0a%0d" ;
+				body += "object: "+object+"%0a%0d" ;
 				body += "message: "+message;
 
 
-				$("#form1").attr("action","mailto:winnie@hgwebsite.com?subject=這是主旨&body="+body); 
+				$("#form1").attr("action","mailto:wanttofly61383@gmail.com?subject=這是主旨&body="+body); 
 				$("#form1").submit();
 
 				//$(document).load( $(".btn").click(sendEmail););

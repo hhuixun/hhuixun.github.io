@@ -1079,7 +1079,7 @@ textarea:focus {
     height: 30px;
     width: 30px;
     display: inline-block;
-    background: #ffbf00;
+    background: $brandcolor;
     text-align: center;
     line-height: 33px;
     margin-right: 10px;
@@ -1093,7 +1093,7 @@ textarea:focus {
 }
 
 .btn-box {
-    background: #ffbf00;
+    background: $brandcolor;
     padding: 10px 50px;
     border-radius: 0;
     color: #fff;

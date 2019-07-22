@@ -1347,12 +1347,7 @@ textarea:focus {
         margin-top: 30px;
     }
 }
-@media screen and (max-width: 768px){
-    .box-intro{
-        background-size: auto;
-        background-position: center;
-    }
-}
+
 @media only screen and (max-width: 670px) {
     .box-headline {
         font-size: 100px;
@@ -1401,5 +1396,11 @@ textarea:focus {
     .top-bar h1 {
         font-size: 30px;
         line-height: 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    .box-intro{
+        background-size: auto;
+        background-position: center;
     }
 }

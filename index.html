@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>TEST</title>
+    <title>Box personal portfolio Template</title>
     <link rel="icon" href="img/fav.png" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-<!--    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">-->
+    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
 
     <!-- main css -->
     <link href="css/style.css" rel="stylesheet">
@@ -30,7 +29,148 @@
 </head>
 
 <body>
-TEST
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="pre-container">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end Preloader -->
+
+    <div class="container-fluid">
+        <!-- box header -->
+        <header class="box-header">
+            <div class="box-logo">
+                <a href="index.html"><img src="img/logo.png" width="45" alt="Logo"></a>
+            </div>
+            <!-- box-nav -->
+            <a class="box-primary-nav-trigger" href="#0">
+                <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
+            </a>
+            <!-- box-primary-nav-trigger -->
+        </header>
+        <!-- end box header -->
+
+        <!-- nav -->
+        <nav>
+            <ul class="box-primary-nav">
+                <li class="box-label">All  about me</li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="contact.html">contact me</a></li>
+
+
+
+                <li class="box-label">Follow me</li>
+
+                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
+            </ul>
+        </nav>
+        <!-- end nav -->
+
+        <!-- box-intro -->
+        <section class="box-intro">
+            <div class="table-cell">
+                <h1 class="box-headline letters rotate-2">
+                    <span class="box-words-wrapper">
+                        <b class="is-visible">HELLO.</b>
+                        <b>&nbsp;HELLO.</b>
+                        <b>HELLO.</b>
+                    </span>
+		        </h1>
+                <h5 class="typed"></h5>
+            </div>
+
+            <div class="mouse">
+                <div class="scroll"></div>
+            </div>
+        </section>
+        <!-- end box-intro -->
+    
+
+    <!-- portfolio div -->
+    <div class="portfolio-div">
+        <div class="portfolio">
+            <div class="no-padding portfolio_container">
+                <!-- single work -->
+                <div class="col-md-6 col-sm-6 ads graphics">
+                    <a href="about.html" class="portfolio_item">
+                        <img src="img/squ07.jpg" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>更認識我</span>
+                                    <em>About</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-6 col-sm-6 photography">
+                    <a href="portfolio.html" class="portfolio_item">
+                        <img src="img/squ02.jpg" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>歷年作品介紹</span>
+                                    <em>portfolio</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+            </div>
+            <!-- end portfolio_container -->
+        </div>
+        <!-- portfolio -->
+    </div>
+	
+    <!-- end portfolio div -->
+</div>
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+            <p class="copyright">© Hui Xun Portfolio 2019</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <!-- end back to top -->
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <!--  custom script -->
+    <script src="js/custom.js"></script>
+	<script>
+		var typed6 = new Typed('.typed', {
+			//strings: ['npm install^1000\n `installing components...` ^1000\n `Fetching from source...`'],
+			strings: ["I'm Hui Xun,^1000\na Web Designer"],
+			typeSpeed: 100,
+			loop: false,
+		});
+	</script>
 </body>
 
 </html>

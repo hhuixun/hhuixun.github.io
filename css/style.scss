@@ -515,6 +515,9 @@ b i:last-child {
     line-height: 1.7;
     text-shadow: rgba(0, 0, 0, 0.6) 0px 2px 3px;
     font-size: 15px;
+    @media screen and (max-width: 768px){
+        top: 150px;
+    }
 }
 
 

@@ -471,12 +471,15 @@ h5 {
 	}
 	.box-intro{
 		text-align: center;
-		display: table;
-		height: 100vh;
+		display: block;
+		height: 68vh;
 		width: 100%;
-		background: url(../img/100102.jpg) no-repeat;
+		background-image: url(../img/100102.jpg);
 		background-size: 100% auto;
-		background-position: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-size: 200% auto;
 	}
 }
 .box-intro em {

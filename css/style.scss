@@ -518,6 +518,9 @@ b i:last-child {
     @media screen and (max-width: 768px){
         top: 150px;
     }
+    @media screen and (max-width: 500px){
+        top: 80px;
+    }
 }
 
 

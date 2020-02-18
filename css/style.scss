@@ -462,12 +462,14 @@ h5 {
 }
 @media screen and (max-width:768px){
 	.box-intro .table-cell {
-		display: table-cell;
+		display: block;
 		vertical-align: middle;
 		position: static;
 		top: auto;
 		transform: initial;
-		width: 100%;
+        width: 100%;
+        position: absolute;
+        top: 50%;
 	}
 	.box-intro{
 		text-align: center;
@@ -479,8 +481,22 @@ h5 {
         background-position: center;
         background-repeat: no-repeat;
         overflow: hidden;
-        background-size: 200% auto;
-	}
+        background-size: auto 100%;
+        position: relative;
+        h5{
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            transform: translate(-50%);
+            width: 100%;
+        }
+        // .table-cell{
+        //     bottom: 0;
+        //     position: absolute;
+        // }
+        // bottom: 0;
+        // position: absolute;
+    }
 }
 .box-intro em {
     font-style: normal;
@@ -596,10 +612,18 @@ b i:last-child {
     white-space: nowrap;
     left: 0;
     top: 0;
+    @media screen and (max-width: 768px){
+        left: 50%;
+        top: 0;
+        transform: translate(-50%);
+    }
 }
 
 .box-words-wrapper b.is-visible {
     position: relative;
+    @media screen and (max-width: 768px){
+        position: absolute;
+    }
 }
 
 .no-js .box-words-wrapper b {
@@ -613,6 +637,11 @@ b i:last-child {
 .box-headline.rotate-2 .box-words-wrapper {
     -webkit-perspective: 300px;
     perspective: 300px;
+    @media screen and (max-width: 768px){
+        width: 100% !important;
+        text-align: center;
+        display: block;
+    }
 }
 
 .box-headline.rotate-2 i,
@@ -1432,11 +1461,5 @@ textarea:focus {
     .top-bar h1 {
         font-size: 30px;
         line-height: 30px;
-    }
-}
-@media screen and (max-width: 768px){
-    .box-intro{
-        background-size: auto;
-        background-position: center;
     }
 }

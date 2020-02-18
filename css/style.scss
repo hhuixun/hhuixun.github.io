@@ -604,7 +604,10 @@ b i:last-child {
 .box-headline {
     font-size: 130px;
     line-height: 1.0;
-	text-shadow: rgba(0, 0, 0, 0.5) 2px 3px 6px;
+    text-shadow: rgba(0, 0, 0, 0.5) 2px 3px 6px;
+    @media screen and (max-width: 900px){
+        font-size: 65px;
+    }
 }
 
 .box-words-wrapper {
